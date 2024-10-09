@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding:55px;   
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: #2e2e2e;
+    font-size: 20px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    font-family: Raleway;
+    margin-left: 20px;
+}
+
+.navbar ul li a:hover {
+    background-image: linear-gradient(to top, #113048, #087235 50%);
+    color: #e8e8e8;
+    height: 40px;
+    border-radius: 10px;
+    border-bottom: rgba(0, 128, 53, 80%) solid 4px;
+}
+
+.btn-cadastre{
+    width: 150px;
+    height: 40px;
+    color: #2e2e2e;
+    height: 40px;
+    font-size: 20px;
+    font-family: Raleway;
+    border: none;
+    display: flex;
+    position: absolute;
+    right: 85px;
+    top: 66px;
+    justify-content: center;
+    cursor: pointer;
+    background: none;  
+}
+
+.btn-cadastre:hover{
+    background-image: linear-gradient(to top, #113048, #087235 50%);
+    color: #e8e8e8;
+    display: flex;
+    position: absolute;
+    right: 85px;
+    top: 55px;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: rgba(0, 128, 53, 80%) solid 4px;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    margin-left: 85px;
+    list-style: none;
+    position: absolute;
+    top: 25px;
+}
+
+.rodape{
+    display: block;
+    position: fixed;
+    height: 180px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #113048;
+    color: #e8e8e8;
+}
+
+.contato{
+    margin-left: 140px;
+    margin-top: 25px;  
+}
+
+.contato p{
+    font-family: OpenSans;
+}
+
+.copyright{
+    color:#e8e8e8;
+    display: flex; 
+    margin-top: 25px;
+    height: 40px;
+    background-color:rgba(243, 156, 18, 56%);
+    align-items: center;
+    justify-content: center;
+    font-family: Raleway;
+    font-style: 16px;
+}
+
+/* Adicionei um comentário para teste */
+.icone-whatsapp img{
+    display: flex;
+    position: absolute;
+    right: 85px;
+    top: 40px; 
+}

@@ -25,11 +25,12 @@
 }
 
 .navbar ul li a:hover {
-    background-image: linear-gradient(to top, #113048, #087235 50%);
+    background-image: linear-gradient(to top, #113048, #087235cc);
+    opacity: 70%;
     color: #e8e8e8;
     height: 40px;
     border-radius: 10px;
-    border-bottom: rgba(0, 128, 53, 80%) solid 4px;
+    border-bottom: #008036cc solid 4px;
 }
 
 .btn-cadastre{
@@ -50,7 +51,7 @@
 }
 
 .btn-cadastre:hover{
-    background-image: linear-gradient(to top, #113048, #087235 50%);
+    background-color: #ff8900;
     color: #e8e8e8;
     display: flex;
     position: absolute;
@@ -58,8 +59,10 @@
     top: 55px;
     padding: 10px;
     border-radius: 10px;
-    border-bottom: rgba(0, 128, 53, 80%) solid 4px;
+    border-bottom: #113048 solid 4px;
     justify-content: center;
+    opacity: 70%;
+    font-weight: 550;
 }
 
 .logo{

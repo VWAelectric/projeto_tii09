@@ -73,7 +73,7 @@
     top: 25px;
 }
 
-.rodape{
+footer{
     display: block;
     position: fixed;
     height: 180px;
@@ -104,9 +104,11 @@
     font-style: 16px;
 }
 
-.icone-whatsapp img{
+.bi{
+    font-size: 36px;
+    color: #fff;
     display: flex;
     position: absolute;
     right: 85px;
-    top: 40px; 
+    top: 50px; 
 }

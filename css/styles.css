@@ -23,15 +23,15 @@
     font-family: Raleway;
     margin-left: 20px;
     position: relative;
-}
 
-.navbar ul li a:hover {
-    background-image: linear-gradient(to top, #113048, #087235cc);
-    opacity: 70%;
-    color: #e8e8e8;
-    height: 40px;
-    border-radius: 10px;
-    border-bottom: #008036cc solid 4px;
+    &:hover {
+        background-image: linear-gradient(to top, #113048, #087235cc);
+        opacity: 70%;
+        color: #e8e8e8;
+        height: 40px;
+        border-radius: 10px;
+        border-bottom: #008036cc solid 4px;
+    }
 }
 
 .btn-cadastre{
@@ -48,22 +48,22 @@
     top: 66px;
     justify-content: center;
     cursor: pointer;
-    background: none;  
-}
+    background: none;
 
-.btn-cadastre:hover{
-    background-color: #ff8900;
-    color: #e8e8e8;
-    display: flex;
-    position: absolute;
-    right: 85px;
-    top: 55px;
-    padding: 10px;
-    border-radius: 10px;
-    border-bottom: #113048 solid 4px;
-    justify-content: center;
-    opacity: 70%;
-    font-weight: 550;
+    &:hover {
+        background-color: #ff8900;
+        color: #e8e8e8;
+        display: flex;
+        position: absolute;
+        right: 85px;
+        top: 55px;
+        padding: 10px;
+        border-radius: 10px;
+        border-bottom: #113048 solid 4px;
+        justify-content: center;
+        opacity: 70%;
+        font-weight: 550;
+    } 
 }
 
 .logo{
@@ -108,11 +108,12 @@ footer{
 
 .bi{
     font-size: 36px;
-    color: #fff;
+    color: black;
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 85px;
-    top: 50px; 
+    bottom: 90px;
+   
 }
 
 .myDropdown {
@@ -132,6 +133,7 @@ footer{
     margin: 54px 85px;
     width: 800px;
     height: 600px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -139,6 +141,7 @@ footer{
     width: 300%;
     height: 600px;
     display: flex;
+    
 }
 
 .slider-content input {
@@ -152,10 +155,9 @@ footer{
 
 .slider img {
     width: 800px;
-    height: 600px;
 }
 
-.manual-navigation {
+.manual-navigation, .navigation-auto div {
     position: absolute;
     width: 800px;
     margin-top: -40px;
@@ -164,7 +166,7 @@ footer{
 }
 
 .manual-btn {
-    border: 3px solid #c0c0c0;
+    border: 4px solid #c0c0c0;
     width: 25px;
     height: 25px;
     padding: 5px;
@@ -172,10 +174,10 @@ footer{
     border-radius: 12.5px;
     cursor: pointer;
     transition: .3s;
-}
 
-.manual-btn:hover {
-    background-color: #F39C12;
+    &:hover{
+        background-color: #F39C12;
+    }
 }
 
 #radio1:checked ~ .first {
@@ -188,3 +190,16 @@ margin-left: -33.33%;
 #radio3:checked ~ .first {
 margin-left: -66.66%;
 }
+
+.navigation-auto div {
+    border: 4px solid #c0c0c0;
+    padding: 5px;
+    border-radius: 12.5px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+

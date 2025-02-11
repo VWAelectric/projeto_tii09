@@ -4,28 +4,36 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 1366px;
+}
+
 .navbar ul {
-    height:300px;
+    width: 931px;
+    height: 150px;
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     padding: 55px;
+    margin-left: 265px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    padding: 10px;
     color: #2e2e2e;
     font-size: 20px;
     display: block;
     width: 150px;
     text-align: center;
     font-family: Raleway;
-    margin-left: 20px;
-    position: relative;
 
+    /* margin-left: 30px; */
     &:hover {
         background-image: linear-gradient(to top, #113048, #087235cc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         opacity: 70%;
         color: #e8e8e8;
         height: 40px;
@@ -68,36 +76,50 @@
 
 .logo {
     display: flex;
-    margin-left: 220px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px;
+    width: 265px;
+    height: 150px;
     list-style: none;
     position: absolute;
-    top: 80px;
+    top: 60px;
 }
 
 footer {
-    display: block;
-    /* position: fixed; */
-    height: 180px;
-    bottom: 0px;
-    width: 100%;
+   display: flex;
+   flex-direction: column;
+
+    height: 200px;
+   
     background-color: #113048;
     color: #e8e8e8;
 }
 
 .contato {
-    margin-left: 140px;
-    margin-top: 25px;
+    width: 250px;
+    height: 110px;
+    margin-left: 136px;
 }
 
 .contato p {
+    position: absolute;
+    top: 1005px;
+    color: #e8e8e8;
     font-family: OpenSans;
+    width: 250px;
+    height: 110px;
+    line-height: 1.4rem;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .copyright {
-
     color: #e8e8e8;
     display: flex;
-    margin-top: 50px;
+    margin-top: 160px;
     height: 40px;
     background-color: rgba(243, 156, 18, 56%);
     align-items: center;
@@ -112,12 +134,15 @@ footer {
     display: flex;
     position: fixed;
     right: 85px;
-    bottom: 90px;
-
+    bottom: 100px;
 }
 
 .myDropdown {
     position: relative;
+}
+
+.myDropdown a {
+    line-height: 40px;
 }
 
 .dropdown-content {
@@ -127,11 +152,12 @@ footer {
 
 .show {
     display: block;
+    line-height: 40px;
     z-index: 4;
 }
 
 .container-slider {
-    margin-bottom: 20px;
+    margin: 120px 0px 0px 85px;
     width: 800px;
     height: 600px;
     border-radius: 20px;
@@ -206,15 +232,15 @@ footer {
 
 .container {
     display: flex;
-    width: 1440px;
-    margin: 0 auto; 
+    width: 1366px;
+    margin: 0 auto;
 }
 
-h4  {
+.text-container h4 {
     text-align: center;
     height: 22px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-top: 120px;
     font-family: Montserrat;
 }
 
@@ -222,13 +248,14 @@ h4  {
     width: 450px;
     height: 600px;
     padding: 20px;
+    margin-right: 85px;
     margin-bottom: 60px;
 }
 
 .text-content {
     text-align: center;
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 60px;
     line-height: 2rem;
 }
 
@@ -238,16 +265,84 @@ h4  {
     line-height: 2rem;
 }
 
-.saiba-mais{
+.saiba-mais {
     width: 250px;
     height: 60px;
     border-radius: 30px;
     font-size: 20px;
     font-family: Raleway;
     position: absolute;
-    right: 440px;
+    right: 99px;
     top: 784px;
     background-color: #F39C1233;
     border: 3px solid #C0C0C0;
     cursor: pointer;
+}
+
+/* Media adotada para telas com no mínimo 1440px */
+
+@media(min-width: 1440px) {
+    .logo {
+        display: flex;
+        margin-left: 220px;
+        list-style: none;
+        position: absolute;
+        top: 80px;
+    }
+
+    .container-slider {
+        margin-bottom: 20px;
+        width: 800px;
+        height: 600px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .container {
+        display: flex;
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    h4 {
+        text-align: center;
+        height: 22px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-family: Montserrat;
+    }
+
+    .text-container {
+        width: 450px;
+        height: 600px;
+        padding: 20px;
+        margin-bottom: 60px;
+    }
+
+    .text-content {
+        text-align: center;
+        text-align: justify;
+        margin-top: 20px;
+        line-height: 2rem;
+    }
+
+    .list-container {
+        margin-top: 20px;
+        padding: 20px;
+        line-height: 2rem;
+    }
+
+    .saiba-mais {
+        width: 250px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+        font-family: Raleway;
+        position: absolute;
+        right: 440px;
+        top: 784px;
+        background-color: #F39C1233;
+        border: 3px solid #C0C0C0;
+        cursor: pointer;
+    }
 }

@@ -278,3 +278,8 @@ footer {
 .auto-btn1 {
     width: 200px;
 }
+
+
+.text-container1, .text-container2 {
+    display: none;
+}

@@ -30,13 +30,18 @@ document.addEventListener("scroll", function() {
 // função para trocar os slides automaticamente
 let btn_status = 0;
 
+
 function slider_auto(){
     const btn_slider = document.querySelectorAll(".manual-btn");
+    
+    btn_slider.forEach(bnt => bnt.style.background = "");
     btn_slider[btn_status].click();
+    btn_slider[btn_status].style.background = "#F39C12";
+
 
     btn_status++;
-    if(btn_status === 2){
+    if(btn_status === 3){
         btn_status = 0;
     }
 }
-setInterval(slider_auto,3000);
+setInterval(slider_auto,2000);

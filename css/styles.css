@@ -222,6 +222,7 @@ footer {
 
 #radio2:checked~.first {
     margin-left: -33.33%;
+    
 }
 
 #radio3:checked~.first {

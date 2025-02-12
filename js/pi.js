@@ -62,4 +62,4 @@ function slider_auto(){
         btn_status = 0;
     }
 }
-setInterval(slider_auto,2000);
+setInterval(slider_auto,4000);

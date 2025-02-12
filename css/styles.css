@@ -9,7 +9,7 @@ header {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-   
+
 }
 
 .navbar ul {
@@ -192,12 +192,15 @@ footer {
 
 .manual-navigation,
 .navigation-auto div {
-    position: absolute;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     width: 800px;
-    left: 82px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
+
+
 }
 
 .manual-btn {
@@ -222,7 +225,7 @@ footer {
 
 #radio2:checked~.first {
     margin-left: -33.33%;
-    
+
 }
 
 #radio3:checked~.first {
@@ -271,7 +274,7 @@ footer {
     border: 3px solid #C0C0C0;
     cursor: pointer;
 }
-.auto-btn1{
+
+.auto-btn1 {
     width: 200px;
 }
-

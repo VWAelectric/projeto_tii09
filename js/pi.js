@@ -25,3 +25,18 @@ document.addEventListener("scroll", function() {
 });
 
 /**Fim da mudança da cor do whatsapp ao fazer o scroll até o fim da página */
+
+
+// função para trocar os slides automaticamente
+let btn_status = 0;
+
+function slider_auto(){
+    const btn_slider = document.querySelectorAll(".manual-btn");
+    btn_slider[btn_status].click();
+
+    btn_status++;
+    if(btn_status === 2){
+        btn_status = 0;
+    }
+}
+setInterval(slider_auto,3000);

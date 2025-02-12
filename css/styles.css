@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-
 .container,
 header {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 
 .navbar ul {
@@ -78,7 +78,6 @@ header {
 }
 
 .logo {
-    border: 4px solid #e8e8e8;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -132,15 +131,6 @@ footer {
     font-family: Raleway;
     font-style: 16px;
 }
-
-/* .bi {
-    font-size: 36px;
-    color: black;
-    display: flex;
-    position: fixed;
-    right: 85px;
-    bottom: 100px;
-} */
 
 #icon {
     color: #e8e8e8;
@@ -204,19 +194,20 @@ footer {
 .navigation-auto div {
     position: absolute;
     width: 800px;
-    left: 60px;
+    left: 82px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn {
-    border: 4px solid #c0c0c0;
-    width: 25px;
-    height: 25px;
+    border: 3px solid #e8e8e8;
+    background-color: #3333335c;
+    width: 30px;
+    height: 30px;
     padding: 5px;
-    margin: -25px 25px;
-    border-radius: 12.5px;
+    margin: -25px 28px;
+    border-radius: 15px;
     cursor: pointer;
     transition: .3s;
 
@@ -280,71 +271,3 @@ footer {
     cursor: pointer;
 }
 
-/* Media adotada para telas com no mínimo 1440px */
-
-/* @media(max-width: 1440px) {
-    .logo {
-        display: flex;
-        margin-left: 220px;
-        list-style: none;
-        position: absolute;
-        top: 80px;
-    }
-
-    .container-slider {
-        margin-bottom: 20px;
-        width: 800px;
-        height: 600px;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-
-    .container {
-        display: flex;
-        width: 1440px;
-        margin: 0 auto;
-    }
-
-    h4 {
-        text-align: center;
-        height: 22px;
-        font-size: 18px;
-        margin-bottom: 20px;
-        font-family: Montserrat;
-    }
-
-    .text-container {
-        width: 450px;
-        height: 600px;
-        padding: 20px;
-        margin-bottom: 60px;
-    }
-
-    .text-content {
-        text-align: center;
-        text-align: justify;
-        margin-top: 20px;
-        line-height: 2rem;
-    }
-
-    .list-container {
-        margin-top: 20px;
-        padding: 20px;
-        line-height: 2rem;
-    }
-
-    .saiba-mais {
-        width: 250px;
-        height: 60px;
-        border-radius: 30px;
-        font-size: 20px;
-        font-family: Raleway;
-        position: absolute;
-        right: 440px;
-        top: 784px;
-        background-color: #F39C1233;
-        border: 3px solid #C0C0C0;
-        cursor: pointer;
-    }
-
-} */

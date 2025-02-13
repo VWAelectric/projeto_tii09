@@ -30,28 +30,33 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="download.html">Downloads</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li class="myDropdown dropdown"><a href="setores.html">Setores</a>
-                    <div class="dropdown-content">
-                        <a href="industria.html">Indústria</a>
-                        <a href="financeiro.html">Financeiro</a>
-                        <a href="varejo.html">Varejo</a>
-                        <a href="saude.html">Saúde</a>
-                    </div>
-                </li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <div class="container-nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.html">Downloads</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li class="myDropdown dropdown"><a href="setores.html">Setores</a>
+                        <div class="dropdown-content">
+                            <a href="industria.html">Indústria</a>
+                            <a href="financeiro.html">Financeiro</a>
+                            <a href="varejo.html">Varejo</a>
+                            <a href="saude.html">Saúde</a>
+                        </div>
+                    </li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><button class="btn-cadastre" id="btn-acessar">Cadastre-se</button></li>
+                </ul>
 
-            <button class="btn-cadastre">Acessar</button>
-            <div class="logo">
-                <li><a href="index.html"> <img src="./img/logomarca.png" alt="Logotipo da empresa" width="140px "></a>
-                </li>
-            </div>
-        </nav>
+
+
+                <div class="logo">
+                    <li><a href="index.html"> <img src="./img/logomarca1.png" alt="Logotipo da empresa"
+                                width="140px "></a>
+                    </li>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -60,21 +65,23 @@
 
     <footer>
         <div class="contato">
-            <p>Contato:</p>
-            <p>Rua Tito,54 | São Paulo - SP</p>
-            <p>CEP: 05051-000</p>
-            <p>Telefone: (11) 4444-5555</p>
-            <p>Whatsapp: (11) 95689-4612</p>
+            <p>Contato: <br>
+                Rua Tito,54 | São Paulo - SP <br>
+                CEP: 05051-000 <br>
+                Telefone: (11) 4444-5555<br>
+                Whatsapp: (11) 95689-4612
+            </p>
+        </div>
 
-            <div>
-                <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
-            </div>
+        <div>
+            <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp" id="icon"></i></a>
         </div>
 
         <div class="copyright">
             &copy; Gestão & Soluções 2024 | Política de Privacidade | Termos de Uso | Política de Cookies
         </div>
     </footer>
+
     <script src="./js/pi.js"></script>
 </body>
 

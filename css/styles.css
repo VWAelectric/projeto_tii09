@@ -342,7 +342,8 @@ footer {
     line-height: 1.8rem;
 }
 
-.graphic-img {
+.graphic-img  img{
     margin: 110px auto;
+    border-radius: 20px;
 }
     

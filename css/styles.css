@@ -316,5 +316,33 @@ footer {
     border-radius: 30px;
 }
 
+/* CSS Página sobre */
 
+.container-sobre {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 700px;
+}
 
+.title-sobre {
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 66px;
+    font-family: Raleway;
+}
+
+.text-container-sobre {
+    font-family: Open Sans;
+    margin: 110px auto;
+    height: 550px;
+    text-align: center;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.8rem;
+}
+
+.graphic-img {
+    margin: 110px auto;
+}
+    

@@ -16,6 +16,19 @@ header {
 
 }
 
+.logo {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    width: 160px;
+    height: 150px;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+}
+
 .navbar ul {
     height: 150px;
     display: flex;
@@ -51,10 +64,11 @@ header {
 
 .container-nav {
     display: flex;
+    margin: 0 auto;
 }
 
 .btn-cadastre {
-   
+
     color: #2e2e2e;
     font-size: 20px;
     width: 140px;
@@ -73,72 +87,6 @@ header {
         opacity: 70%;
         font-weight: 550;
     }
-}
-
-.logo {
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25px;
-    width: 160px;
-    height: 150px;
-    list-style: none;
-    position: absolute;
-    top: 10px;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-
-    height: 200px;
-
-    background-color: #113048;
-    color: #e8e8e8;
-}
-
-.contato {
-    width: 250px;
-    height: 110px;
-    margin-left: 136px;
-}
-
-.contato p {
-    position: absolute;
-    top: 1005px;
-    color: #e8e8e8;
-    font-family: OpenSans;
-    width: 250px;
-    height: 110px;
-    line-height: 1.4rem;
-    padding: 10px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.copyright {
-    color: #e8e8e8;
-    display: flex;
-    margin-top: 160px;
-    height: 40px;
-    background-color: rgba(243, 156, 18, 56%);
-    align-items: center;
-    justify-content: center;
-    font-family: Raleway;
-    font-style: 16px;
-}
-
-#icon {
-    color: #e8e8e8;
-    transition: color 0.3s ease-in-out;
-    font-size: 36px;
-    color: black;
-    display: flex;
-    position: fixed;
-    right: 85px;
-    bottom: 100px;
 }
 
 .myDropdown {
@@ -161,7 +109,7 @@ footer {
 }
 
 .container-slider {
-    margin: 120px 0px 0px 85px;
+    margin: 110px auto;
     width: 800px;
     height: 600px;
     border-radius: 20px;
@@ -241,10 +189,8 @@ footer {
 .text-container {
     width: 450px;
     height: 600px;
-    padding: 20px;
-    margin-right: 85px;
+    padding: 15px;
     margin-bottom: 60px;
- 
 }
 
 .text-content {
@@ -260,24 +206,81 @@ footer {
     line-height: 2rem;
 }
 
+.auto-btn1 {
+    width: 200px;
+}
+
+.text-container-none {
+    display: none;
+}
+
 .saiba-mais {
     width: 200px;
     height: 50px;
     border-radius: 30px;
     font-size: 20px;
     font-family: Raleway;
-    position: relative;
-    right: 10px;
-    /* top: 800px; */
+    position: absolute;
+    top: 760px;
+    right: 100px;
     background-color: #F39C1233;
     border: 3px solid #C0C0C0;
     cursor: pointer;
+    z-index: 5;
 }
 
-.auto-btn1 {
-    width: 200px;
+footer {
+    display: flex;
+    justify-content: left;
+    height: 200px;
+    background-color: #113048;
+    color: #e8e8e8;
+    margin-top: 90px;
+
+
 }
-.text-container-none{
-    display: none;
+
+.contato {
+    width: 250px;
+    height: 110px;
+    margin-left: 120px;
+}
+
+.contato p {
+    margin-top: 25px;
+    color: #e8e8e8;
+    font-family: OpenSans;
+    width: 250px;
+    height: 110px;
+    line-height: 1.4rem;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(243, 156, 18, 56%);
+    margin-left: -370px;
+    margin-top: 160px;
+    font-family: Raleway;
+    font-style: 16px;
+    color: #e8e8e8;
+}
+
+#icon {
+    color: #e8e8e8;
+    transition: color 0.3s ease-in-out;
+    font-size: 36px;
+    color: black;
+    display: flex;
+    position: fixed;
+    right: 85px;
+    bottom: 100px;
 }
 

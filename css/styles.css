@@ -52,26 +52,15 @@ header {
     font-size: 20px;
     font-family: Raleway;
     border: none;
-    display: flex;
-    position: absolute;
-    right: 175px;
-    top: 66px;
-    justify-content: center;
-
     cursor: pointer;
     background: none;
 
     &:hover {
         background-color: #ff8900;
         color: #e8e8e8;
-        display: flex;
-        position: absolute;
-        right: 175px;
-        top: 55px;
         padding: 10px;
         border-radius: 10px;
         border-bottom: #113048 solid 4px;
-        justify-content: center;
         opacity: 70%;
         font-weight: 550;
     }
@@ -263,17 +252,17 @@ footer {
 }
 
 .saiba-mais {
+    position: relative;
     width: 200px;
     height: 50px;
     border-radius: 30px;
     font-size: 20px;
     font-family: Raleway;
-    position: absolute;
-    right: 180px;
-    top: 800px;
     background-color: #F39C1233;
     border: 3px solid #C0C0C0;
     cursor: pointer;
+    bottom: -40PX;
+    left: 150PX;
 }
 
 .auto-btn1 {

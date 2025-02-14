@@ -48,7 +48,6 @@ header {
     text-align: center;
     font-family: Raleway;
 
-    /* margin-left: 30px; */
     &:hover {
         background-image: linear-gradient(to top, #113048, #087235cc);
         display: flex;
@@ -229,53 +228,6 @@ header {
     z-index: 5;
 }
 
-footer {
-    position: relative;
-    bottom: 0px;
-    display: flex;
-    justify-content: left;
-    width: 100%;
-    height: 200px;
-    background-color: #113048;
-    color: #e8e8e8;
-    margin-top: 90px;
-
-
-}
-
-.contato {
-    width: 250px;
-    height: 110px;
-    margin-left: 120px;
-}
-
-.contato p {
-    margin-top: 25px;
-    color: #e8e8e8;
-    font-family: OpenSans;
-    width: 250px;
-    height: 110px;
-    line-height: 1.4rem;
-    padding: 10px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    background-color: rgba(243, 156, 18, 56%);
-    margin-left: -370px;
-    margin-top: 160px;
-    font-family: Raleway;
-    font-style: 16px;
-    color: #e8e8e8;
-}
-
 #icon {
     color: #e8e8e8;
     transition: color 0.3s ease-in-out;
@@ -283,7 +235,7 @@ footer {
     color: black;
     display: flex;
     position: fixed;
-    right: 85px;
+    right: 50px;
     bottom: 100px;
 }
 
@@ -323,7 +275,9 @@ footer {
 
 /* CSS Página sobre */
 
-.container-sobre  {
+.container-sobre,
+.container-industria,
+.container-financ {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -360,23 +314,20 @@ footer {
 
 /* CSS Página indústria */
 
-.container-industria {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 700px;
-}
-
 .text-container-ind {
     position: relative;
     font-family: Open Sans;
-    margin: 110px auto;
+    margin: 80px auto;
     height: 550px;
     text-align: center;
     text-align: justify;
-    padding: 20px;
-    line-height: 2rem;
+    padding: 30px;
+    line-height: 1.6rem;
     background-image: url(../img/grafico5.jpg);
+}
+
+.text-container-ind p {
+  text-indent: 30px;
 }
 
 .text-container-ind p, h2 {
@@ -399,5 +350,84 @@ footer {
     height: 550px;
     margin: 110px auto;
     border-radius: 20px;
+}
+
+/* CSS Página Financeiro */
+
+.content-image img {
+    width: 600px;
+    height: 550px;
+    border-radius: 20px;
+    margin-top: 110px;
+}
+
+.content-text h2 {
+    font-family: Raleway;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.content-text h2::first-letter {
+    font-size: 2em;
+}
+
+.content-text {
+    width: 600px;
+    height: 550px;
+    font-family: Open Sans;
+    margin: 110px auto;
+    padding: 30px;
+    text-align: center;
+    text-align: justify;
+    line-height: 2rem;
+}
+
+
+
+
+
+.contato {
+    width: 250px;
+    height: 110px;
+    margin-left: 120px;
+}
+
+.contato p {
+    margin-top: 25px;
+    color: #e8e8e8;
+    font-family: OpenSans;
+    width: 250px;
+    height: 110px;
+    line-height: 1.4rem;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 200px;
+    background-color: #113048;
+    color: #e8e8e8;
+    margin-top: 90px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(243, 156, 18, 56%);
+    margin-left: -370px;
+    margin-top: 160px;
+    font-family: Raleway;
+    font-style: 16px;
+    color: #e8e8e8;
 }
     

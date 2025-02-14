@@ -235,8 +235,8 @@ header {
     color: black;
     display: flex;
     position: fixed;
-    right: 50px;
-    bottom: 100px;
+    right: 30px;
+    bottom: 95px;
 }
 
 /* CSS Página download */
@@ -275,25 +275,22 @@ header {
 
 /* CSS Página sobre */
 
-.container-sobre,
-.container-industria,
-.container-financ {
+.container-global {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
     height: 700px;
 }
 
-.title-sobre,
-.title-ind {
+.title-global {
     text-align: left;
     margin-top: 60px;
     margin-bottom: 66px;
+    padding: 10px;
     font-family: Raleway;
 }
 
-.title-sobre::first-letter,
-.title-ind::first-letter {
+.title-global::first-letter {
     font-size: 2em;
 }
 
@@ -318,10 +315,11 @@ header {
     position: relative;
     font-family: Open Sans;
     margin: 80px auto;
+    width: 560px;
     height: 550px;
+    padding: 15px;
     text-align: center;
     text-align: justify;
-    padding: 30px;
     line-height: 1.6rem;
     background-image: url(../img/grafico5.jpg);
 }
@@ -345,46 +343,27 @@ header {
     left: 0;
     background: rgba(255, 255, 255, 0.6);    
 }
-
-.ind-img  img{
-    height: 550px;
-    margin: 110px auto;
-    border-radius: 20px;
-}
-
 /* CSS Página Financeiro */
+/* CSS Página Varejo */
+/* CSS Página Saúde */
 
-.content-image img {
+.global-image img {
     width: 600px;
     height: 550px;
+    margin: 110px 20px;
     border-radius: 20px;
-    margin-top: 110px;
 }
 
-.content-text h2 {
-    font-family: Raleway;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-
-.content-text h2::first-letter {
-    font-size: 2em;
-}
-
-.content-text {
-    width: 600px;
+.content-global-text {
+    width: 550px;
     height: 550px;
     font-family: Open Sans;
     margin: 110px auto;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     text-align: justify;
     line-height: 2rem;
 }
-
-
-
-
 
 .contato {
     width: 250px;

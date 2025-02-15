@@ -437,4 +437,96 @@ footer {
     font-style: 16px;
     color: #e8e8e8;
 }
+.register{
+
+    z-index: 5;
+    display: none;
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 550px;
+    background-color: #113048;
     
+}
+/* janela de registro */
+.register label, input{
+    display: block;
+    margin: 10px 70px;
+    border-radius: 5px;
+   
+   
+}
+.register input{
+    border: 0;
+    border-top: 3px outset rgba(0, 0, 0, 0.575);
+    caret-color: black;
+    
+}
+.register label{
+    margin-top: 17px;
+
+}
+#nome, #email, #cargo{
+    width: 75%;
+}
+#telefone, #senha1, #senha2{
+    width: 40%;
+}
+#telefone, #senha1, #senha2, #nome, #email, #cargo{
+    height: 28px;
+    caret: black;
+    padding: 3px;
+}
+
+.button_avançar{
+    position: relative;
+    left: 450px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    background-color: orange;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+.close_register{
+    padding: 5px;
+    position: relative;
+    border-radius: 5px;
+    top: 20px;
+    left: 560px;
+    cursor: pointer;
+}
+.box_message{
+    background-color: white;
+    color: black;
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+    width: 200px;
+    height: 190px;
+    left: 330px;
+    top: -240px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.box_message h1{
+    margin-bottom: 10px;
+}
+
+.box_open{
+    display: block;
+
+}
+.fundo{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}

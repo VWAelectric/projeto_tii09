@@ -447,74 +447,99 @@ footer {
     top: 50%;
     border-radius: 20px;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 550px;
+    width: 700px;
+    height: 500px;
     background-color: #113048;
     
 }
 /* janela de registro */
 .register label, input{
     display: block;
-    margin: 10px 70px;
-    border-radius: 5px;
-   
-   
+    margin: -2px 70px;
+    border-radius: 2px;
 }
 .register input{
     border: 0;
-    border-top: 3px outset rgba(0, 0, 0, 0.575);
     caret-color: black;
-    
+    padding: 6px;
 }
 .register label{
-    margin-top: 17px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 
 }
-#nome, #email, #cargo{
-    width: 75%;
-}
-#telefone, #senha1, #senha2{
-    width: 40%;
-}
-#telefone, #senha1, #senha2, #nome, #email, #cargo{
+#nome, #cnpj, #email{
+    width: 550px;
     height: 28px;
-    caret: black;
-    padding: 3px;
+}
+#telefone, #login, #senha{
+    width: 315px;
+    height: 28px;
 }
 
-.button_avançar{
-    position: relative;
-    left: 450px;
+.button_cadastro{
+    width: 210px;
+    height: 50px;
+    position: absolute;
+    right: 110px;
+    bottom: 30px;
     padding: 5px 15px;
-    border-radius: 30px;
-    background-color: orange;
-    font-size: 1.2em;
+    border-radius: 8px;
+    background-color: #F39C12;
+    font-size: 20px;
+    font-family: Raleway;
     cursor: pointer;
-    
+}
+
+.button_login {
+    width: 210px;
+    height: 50px;
+    position: absolute;
+    right: 380px;
+    bottom: 30px;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: #F39C12;
+    font-size: 20px;
+    font-family: Raleway;
+    cursor: pointer;
 }
 .close_register{
-    padding: 5px;
-    position: relative;
-    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 2px;
     top: 20px;
-    left: 560px;
+    right: 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 .box_message{
+    display: block;
     background-color: white;
     color: black;
-    position: relative;
+    position: absolute;
     text-align: center;
     font-size: 0.9em;
-    width: 200px;
-    height: 190px;
-    left: 330px;
-    top: -240px;
+    width: 210px;
+    height: 170px;
+    right: 80px;
+    bottom: 95px;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .box_message h1{
-    margin-bottom: 10px;
+    font-family: Raleway;
+    text-align: justify;
+    /* margin-bottom: 10px; */
+}
+
+.box_message h1::first-letter {
+    font-size: 47px;
+}
+
+.box_message p {
+     text-align: justify;
 }
 
 .box_open{

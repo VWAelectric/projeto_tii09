@@ -58,3 +58,21 @@ function slider_auto(){
     }
 }
 setInterval(slider_auto,4000);
+
+const close_register = document.getElementById("close_register");
+const register = document.querySelector(".register");
+const btn_acessar = document.getElementById("btn_acessar");
+const fundo = document.querySelector(".fundo");
+
+close_register.addEventListener("click",()=>{
+    register.classList.remove("box_open");
+    fundo.style.display = "none";
+    console.log("testte fechar");
+})
+
+btn_acessar.addEventListener("click", ()=>{
+    register.classList.add("box_open")
+    fundo.style.display = "block";
+    console.log("abrir box");
+
+})

@@ -365,6 +365,34 @@ header {
     line-height: 2rem;
 }
 
+.container-fale-conosco {
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 700px;
+    background-image: url(../img/conosco1.jpg);
+}
+
+.container-fale-conosco::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade aqui */
+    z-index: 1;
+}
+
+.content-form h2 {
+    position: relative;
+    z-index: 2;
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 20px;
+}
+
 .contato {
     width: 250px;
     height: 110px;

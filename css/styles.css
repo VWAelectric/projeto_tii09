@@ -794,3 +794,38 @@ ul {
     cursor: pointer;
 
 }
+
+@media(max-width: 480px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul  {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 220px;
+        margin-left: -30px;
+    }
+
+    .container-slider {
+        display: none;
+    }
+
+    .texts-containers {
+        margin: 0 auto;
+
+    }
+
+    .contato p {
+        position: relative;
+        left: -100px;
+    }
+
+    .copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}

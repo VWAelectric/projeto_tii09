@@ -76,3 +76,94 @@ btn_acessar.addEventListener("click", ()=>{
     console.log("abrir box");
 
 })
+
+// janela de download
+
+const btn_cancel = document.querySelector(".btn_cancel");
+const btn_cancelpage1 = document.querySelector(".btn_cancelpage1");
+const btn_cancel_download = document.querySelector(".btn_cancel_download")
+const update = document.querySelector(".update");
+const btn_atu = document.querySelector(".btn_atu");
+const update_page1 = document.querySelector(".update_page1");
+const update_download = document.querySelector(".update_download");
+const btn_avan = document.querySelector(".btn_avan");
+const bnt_down = document.querySelector(".bnt_down");
+const downloding = document.querySelector(".downloding");
+let txt_title =  document.querySelector(".txt_title");
+const btn_np = document.querySelector(".btn_np");
+
+const btn_doc = document.querySelector(".btn_doc");
+
+
+const downin = document.querySelector(".downin");
+
+let barra_down = 0;
+
+
+
+
+btn_cancel.addEventListener("click", ()=>{
+    update.style.display = "none";
+    update_page1.style.display = "none";
+    update_download.style.display = "none";
+    barra_down = 0;
+})
+btn_cancelpage1.addEventListener("click", ()=>{
+    update.style.display = "none";
+    update_page1.style.display = "none";
+    update_download.style.display = "none";
+    barra_down = 0;
+})
+btn_cancel_download.addEventListener("click",()=>{
+    update.style.display = "none";
+    update_page1.style.display = "none";
+    update_download.style.display = "none";
+    barra_down = 0;
+
+})
+btn_avan.addEventListener("click",()=>{
+    update_page1.style.display = "block";
+    
+
+
+})
+btn_atu.addEventListener("click",()=>{
+    update.style.display = "block";
+    txt_title.innerHTML = "Atualização"
+    console.log("teste atu")
+
+})
+bnt_down.addEventListener("click", ()=>{
+    update_download.style.display = "block"
+    let interval = setInterval(()=>{
+        barra_donwload();
+        if(barra_down >= 100){
+            clearInterval(interval);
+            downloding.innerHTML = "Download Realizado Com Sucesso"
+
+        }
+
+    },100);
+    
+    
+})
+
+function barra_donwload(){
+
+    barra_down++;
+    
+    downin.style.width = barra_down + "%";
+}
+
+
+btn_doc.addEventListener("click",()=>{
+    update.style.display = "block";
+    txt_title.innerHTML = "Documentos"
+    
+})
+btn_np.addEventListener("click",()=>{
+    update.style.display = "block";
+    txt_title.innerHTML = "Nosso APP"
+    
+})
+
